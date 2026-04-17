@@ -38,7 +38,8 @@ build_ibs_submatrix <- function(dist_path, id_path, sample_pairs) {
     sample_pairs <- read.table(sample_pairs, header = FALSE,
                                stringsAsFactors = FALSE)
   }
-
+  dna_names <- intersect(dna_names, ids)
+  rna_names <- intersect(rna_names, ids)
   dna_names <- as.character(sample_pairs[, 1])
   rna_names <- as.character(sample_pairs[, 2])
 
