@@ -38,9 +38,8 @@ build_ibs_submatrix <- function(dist_path, id_path, sample_pairs) {
     sample_pairs <- read.table(sample_pairs)
     }
 
-  dna_names <- as.character(sample_pairs[, 2])
-  rna_names <- as.character(sample_pairs[, 3])
-
+  dna_names <- as.character(sample_pairs$V2)
+  rna_names <- as.character(sample_pairs$V3)
   sub_mat <- sim_mat[dna_names, rna_names, drop = FALSE]
   return(sub_mat)
 }
