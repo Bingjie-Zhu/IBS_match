@@ -31,7 +31,7 @@ library(IBSmatch)
 sub_mat <- build_ibs_submatrix(
   dist_path    = "rna_dist.mdist",
   id_path      = "rna_dist.mdist.id",
-  sample_pairs = "matched_samples.txt"   # columns: DNA_name, RNA_name
+  sample_pairs = "matched_samples.txt"   # columns: sample, DNA_name, RNA_name
 )
 
 # 2. Calculate the top-1% IBS threshold
