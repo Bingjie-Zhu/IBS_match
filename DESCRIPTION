@@ -1,7 +1,15 @@
 Package: IBSmatch
-Title: IBS Match Package
+Title: IBS-Based DNA-RNA Sample Matching
 Version: 0.1.0
-Author: Your Name
-Maintainer: Your Name <your.email@example.com>
-Description: This package provides functions to match IBS data.
+Author: Bingjie Zhu [aut, cre]
+Maintainer: Bingjie Zhu <bingjie.zhu@example.com>
+Description: Provides functions to match DNA and RNA samples using Identity-by-State
+    (IBS) similarity scores. Implements Reciprocal Best Hit (RBH) matching, threshold
+    calculation, distribution visualisation, and audit of matched results against a
+    gold-standard sample list.
 License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    ggplot2
