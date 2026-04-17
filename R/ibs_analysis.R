@@ -27,17 +27,16 @@
 #'
 #' @export
 build_ibs_submatrix <- function(dist_path, id_path, sample_pairs) {
-  dist_mat <- as.matrix(read.table(dist_path, header = FALSE))
-  ids      <- read.table(id_path, header = FALSE)[, 2]
+  dist_mat <- as.matrix(read.table(dist_path))
+  ids      <- read.table(id_path)[, 2]
 
   sim_mat <- 1 - dist_mat
   rownames(sim_mat) <- ids
   colnames(sim_mat) <- ids
 
   if (is.character(sample_pairs)) {
-    sample_pairs <- read.table(sample_pairs, header = FALSE,
-                               stringsAsFactors = FALSE)
-  }
+    sample_pairs <- read.table(sample_pairs)
+    }
 
   dna_names <- as.character(sample_pairs[, 2])
   rna_names <- as.character(sample_pairs[, 3])
