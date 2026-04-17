@@ -54,7 +54,7 @@ plot_ibs_distribution <- function(sub_mat,
                       y = Inf,
                       label = paste0("BG Top 1%\n(",
                                      round(bg_threshold, 4), ")"),
-                      hjust = -0.05, vjust = -0.5, color = "blue", size = 3) +
+                      hjust = -0.05, vjust = 2, color = "blue", size = 3) +
     ggplot2::scale_fill_manual(
       values = c("Background" = "grey", "Matched Pairs" = "#E41A1C")
     ) +
