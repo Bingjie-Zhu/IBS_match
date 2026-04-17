@@ -51,7 +51,7 @@ plot_ibs_distribution <- function(sub_mat,
                         linetype = "dashed", color = "blue") +
     ggplot2::annotate("text",
                       x = bg_threshold,
-                      y = 5,
+                      y = Inf,
                       label = paste0("BG Top 1%\n(",
                                      round(bg_threshold, 4), ")"),
                       hjust = -0.05, vjust = -0.5, color = "blue", size = 3) +
